@@ -20,5 +20,5 @@ This respository is my step by step learning process for setting up My first hom
 
 ## 📝 Latest Breakthrough
 
-[12/20/25 - Completed the task of turning my old Asus laptop into a Proxmox server.](./proxmox-setup.md)
-12/2/25 - Learned about Pi Hole and starting first Pi Hole project. 
+- [12/20/25 - Completed the task of turning my old Asus laptop into a Proxmox server.](./proxmox-setup.md)
+- 12/2/25 - Learned about Pi Hole and starting first Pi Hole project. 
