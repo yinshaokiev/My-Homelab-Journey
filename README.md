@@ -19,5 +19,6 @@ This respository is my step by step learning process for setting up My first hom
 - [ ] **Media** - (Planned) Jellyfin for media services
 
 ## 📝 Latest Breakthrough
-12/20/25 I completed the task of turning my old Asus laptop into a proxmox server. 
+
+[12/20/25 - Completed the task of turning my old Asus laptop into a Proxmox server.](./proxmox-setup.md)
 
