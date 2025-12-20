@@ -3,7 +3,7 @@
 
 ### Post-Install Steps:
 - [x] Installed Proxmox VE 8.x on Asus GL502.
-- [ ] Install Pi Hole 
+- [x] Install Pi Hole 
 - [ ] Install Media Hub like Jellyfin
 - [ ] Install Windows 11 VM for testing 
 
