@@ -2,12 +2,15 @@
 This respository is my step by step learning process for setting up My first homelab built with Proxmox to learn virtualization, networking, backups, and automation
 12/17/25 I started to learn how to transform my laptop into a proxmox server.
 
-## 💻 The Gear
-Hardware: Asus GL502 1060
-CPU: 8 x Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz (
-RAM: 16gig
-SSD: 500GiB
-GPU: NVIDIA Corporation GP106BM [GeForce GTX 1060 Mobile 6GB]
+### 🖥️ Hardware: The "Dragon" (Asus GL502)
+
+| Component | Specification |
+| :--- | :--- |
+| **CPU** | 8 x Intel(R) Core(TM) i7-7700HQ @ 2.80GHz |
+| **RAM** | 16GB DDR4 |
+| **Storage** | 500GiB SSD |
+| **GPU** | NVIDIA GTX 1060 Mobile (6GB VRAM) |
+| **OS** | Proxmox VE (Virtual Environment) |
 
 ## 🛠️ Services I plan to run 
 - [ ] **Pi-hole** - Network-wide ad blocking.
