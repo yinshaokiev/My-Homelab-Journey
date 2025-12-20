@@ -3,17 +3,9 @@
 
 ### Post-Install Steps:
 - [x] Installed Proxmox VE 8.x on Asus GL502.
-- [ ] Configure GPU Passthrough for GTX 1060.
-- [ ] Set up daily backups to external USB drive.
-
-## 🎮 The GPU Project (NVIDIA GTX 1060)
-**Goal:** Pass the mobile GPU through to a Linux Container (LXC) for Jellyfin.
-
-### Steps to take:
-1. Enable `IOMMU` in the Proxmox GRUB configuration.
-2. Blacklist the default open-source drivers.
-3. Install the official NVIDIA Linux drivers on the Proxmox host.
-
+- [ ] Install Pi Hole 
+- [ ] Install Media Hub like Jellyfin
+- [ ] Install Windows 11 VM for testing 
 
 ## 🛠️ Troubleshooting Log
 
