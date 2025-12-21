@@ -15,3 +15,15 @@
 ## ⚠️ Challenges Encountered
 - **Issue:** Gravity (the blocklist) wouldn't update at first.
 - **Fix:** Realized the container didn't have internet access; fixed the Gateway setting in Proxmox.
+
+### 🔧 Container Technical Specifications
+| Setting | Value |
+| :--- | :--- |
+| **Container ID** | 100 |
+| **OS Template** | Debian 13 (trixie) |
+| **CPU Cores** | 1 |
+| **RAM** | 512 MiB |
+| **Root Disk** | 2 GiB |
+| **Unprivileged** | Yes |
+
+<img width="513" height="286" alt="image" src="https://github.com/user-attachments/assets/191f0c2d-bc4c-43fb-abab-7811e299b75b" />
