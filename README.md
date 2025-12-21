@@ -17,6 +17,8 @@ This respository is my step by step learning process for setting up My first hom
 - [ ] **Home Assistant** - (Planned when I buy a home) Smart home orchestration. Acts as a central brain that forces all different brands to work together on a single screen. 
 - [ ] **Nextcloud** - (Planned) Personal cloud storage.
 - [ ] **Media** - (Planned) Jellyfin for media services
+- [ ] **Windows VM** - Windows 11 for testing purposes
+- [ ] **Honey Pot** - Sec + practice 
 
 ## 📝 Latest Breakthrough
 
