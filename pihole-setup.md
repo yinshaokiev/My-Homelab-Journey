@@ -3,7 +3,7 @@
 **Installation Type:** LXC Container (Debian 12)
 
 ## ⚙️ Configuration Details
-- **IP Address:** `10.0.0.xxx` (Private!)
+- **IP Address:** `10.x.x.xxx` (Private!)
 - **Upstream DNS:** Cloudflare (1.1.1.1)
 
 ## 📝 Installation Steps
