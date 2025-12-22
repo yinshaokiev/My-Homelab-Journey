@@ -22,7 +22,7 @@
 * `**name**` - This will Bold the text
 
 ---
-* **Example Linking Down into a folder**
+* **<u>Example Linking Down into a folder:</u>**
 * If you are editing your HomeLab Journey and want to link to the file inside the folder, use this syntax:
 * ` [View Proxmox cheat sheet](./02-PROXMOX_CHEATSHEET.md)`
 * `./` : Start in the current folder.
