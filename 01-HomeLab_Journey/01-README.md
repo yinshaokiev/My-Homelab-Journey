@@ -18,7 +18,8 @@ This respository is my step by step learning process for setting up My first hom
 - [ ] **Nextcloud** - (Planned) Personal cloud storage.
 - [ ] **Media** - (Planned) Jellyfin for media services
 - [ ] **Windows VM** - Windows 11 for testing purposes
-- [ ] **Honey Pot** - Sec + practice 
+- [ ] **Honey Pot** - Sec + practice
+- [ ] **Remote Access** - Tailscale for remote access
 
 ## 📝 Latest Breakthrough
 
