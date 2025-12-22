@@ -43,4 +43,4 @@
 * **The "HTTPS" Trap:** Browsers often block local self-signed certificates (Port 8006). Documentation must include the "Advanced -> Proceed" step for future reference.
 * **Troubleshooting Step 7:** Always document the solution. What seemed like a "broken server" was actually a "confused router."
 
-[Back to Home](../01-README.md)
+[Back to Home](../01-Homelab_Journey/01-README.md)
