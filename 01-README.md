@@ -25,4 +25,4 @@ This respository is my step by step learning process for setting up My first hom
 - [12/20/25 - Completed the task of turning my old Asus laptop into a Proxmox server.](./03-proxmox-setup.md)
 - 12/20/25 - Learned about Pi Hole and starting first Pi Hole project. 
 - 12/20/25  [x] **[Pi-hole](./04-pihole-setup.md)** - Network-wide ad blocking.
-- 12/21/25 [Network Trouble shooting](./TROUBLESHOOTING_LOG.md)
+- 12/21/25 [99-Troubleshooting](./12-21-25_networking.md)
