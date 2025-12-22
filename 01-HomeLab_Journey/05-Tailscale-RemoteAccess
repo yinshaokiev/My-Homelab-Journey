@@ -1,1 +1,6 @@
-plan to add remote access
+Tailscale is widely considered the "gold standard" for home lab remote access because it creates a Mesh VPN. Instead of you having to poke holes in your Xfinity firewall, Tailscale uses a technique called "NAT traversal" to securely connect your devices regardless of where they are in the world.
+
+* **Why Tailscale is Perfect for Your Lab**
+*Security: It uses the WireGuard protocol, which is modern, fast, and highly secure.
+*No Port Forwarding: You don't have to touch your Xfinity router's firewall settings, which keeps your home network safer from external scans.
+*MagicDNS: Tailscale gives your devices easy-to-remember names (like proxmox-server) so you don't have to memorize new IP addresses.
