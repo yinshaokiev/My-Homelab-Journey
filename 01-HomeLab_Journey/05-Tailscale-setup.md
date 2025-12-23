@@ -1,6 +1,6 @@
 # 🌐 Tailscale VPN Installation
 **Status:** ✅ Active
-**Installation Type: LXC Container (Ubuntu 22.04)
+**Installation Type:** LXC Container (Ubuntu 22.04)
 
 ## ⚙️ Configuration Details
 - **Tailnet IP Address:** `100.x.x.xxx` (Private Mesh Network)
