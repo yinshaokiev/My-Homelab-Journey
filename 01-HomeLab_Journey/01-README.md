@@ -28,4 +28,5 @@ This respository is my step by step learning process for setting up My first hom
 - 12/20/25  [x] **[Pi-hole](./04-pihole-setup.md)** - Network-wide ad blocking.
 - 12/21/25 [Networking Incident Response & Troubleshooting](../99-Troubleshooting/12-21-25_networking.md)
 - 12/21/25 - Learned about tailscale because I wanted to know if I can access my homelab outside of my homenetwork. 
-- 12/22/25 - [x] **[Tailscale-VPN](./05-Tailscale-setup.md)** - VPN remote accesss. 
+- 12/22/25 - [x] **[Tailscale-VPN](./05-Tailscale-setup.md)** - VPN remote accesss.
+- -12/23/25 - [Netwokring Incident Response & Troubleshooting](../99-Troubleshooting/12-23-25_tailscale-lxc-fix.md)
