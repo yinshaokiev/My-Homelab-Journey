@@ -3,7 +3,7 @@
 **Installation Type: LXC Container (Ubuntu 22.04)
 
 ## ⚙️ Configuration Details
-- **Tailnet IP Address:** `10.x.x.xxx` (Private Mesh Network)
+- **Tailnet IP Address:** `100.x.x.xxx` (Private Mesh Network)
 - **Auth Method: OAuth via OIDC (secure single sign-on)
 
 ## 📝 Installation Steps
@@ -25,9 +25,12 @@
 | **CPU Cores** | 1 |
 | **RAM** | 512 MiB |
 | **Root Disk** | 8 GiB |
-| **Unprivileged** | No (Privileged required for VPN tunning |
+| **Unprivileged** | No (Privileged container required for kernel device passthrough) |
 
 <img width="1168" height="786" alt="image" src="https://github.com/user-attachments/assets/5f0ad9cf-3ae5-4337-8f87-a12fe3efe215" />
 
+## 🛡️ Security Impact
+- **Zero Trust:** Implemented identity-based access rather than relying on a traditional perimeter firewall.
+- **Attack Surface Reduction:** Successfully established remote management without exposing Port 8006 to the public internet.
 
 [Back to Home](../01-HomeLab_Journey/01-README.md)
