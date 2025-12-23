@@ -1,40 +1,32 @@
-🛠️ Troubleshooting Guide: Tailscale on Proxmox LXC
-Issue 1: Command Not Found (curl)
-Symptoms: When running the installation script, the console returns: bash: curl: command not found.
+# Network Incident Report: Tailscale VPN Implementation & Proxmox LXC Hardening
 
-Cause: Minimalist Linux templates (like Ubuntu/Debian) often exclude the curl utility to save space.
+**Date:** December 23, 2025  
+**Technician:** YSV   
+**Objective:** Establish a secure, encrypted remote access tunnel to the home lab using Tailscale while troubleshooting LXC container permission constraints.
 
-Resolution: Run the following commands to update the package repository and install the missing tool:
-apt update
-apt install curl -y
+---
 
-ssue 2: Tailscale Daemon Not Running
-Symptoms: After installation, running tailscale up returns: failed to connect to local tailscaled; it doesn't appear to be running.
+## 🔍 Problem Identification
+1. **Remote Access Gap:** Proxmox dashboard and local services were restricted to the local management network.
+2. **Permission Constraints:** The initial Tailscale installation failed because the Proxmox container (LXC) was restricted from creating a virtual network tunnel (`/dev/net/tun`) by default.
 
-Cause: The background service (daemon) failed to start, usually due to a lack of permissions to create a network tunnel.
+## 🛠️ Troubleshooting Steps & Methodology
 
-Resolution: 1. Enable Nesting: Ensure LXC > Options > Features > Nesting is checked. 2. Force Start: Manually trigger the service in the console:
-systemctl enable tailscaled
-systemctl start tailscaled
+### Phase 1: Environment Setup
+* **Action:** Created a new Ubuntu 22.04 LXC container as a dedicated VPN gateway.
+* **Action:** Configured a static internal IP to ensure network persistence within the lab.
+* **Outcome:** Container established, but installation script failed initially due to missing `curl` dependencies in the minimal OS template.
 
-Issue 3: Permission Denied / TUN Device Missing
-Symptoms: Tailscale fails to start even with Nesting enabled. The error log shows: failed to create TUN device.
+### Phase 2: Service-Level Troubleshooting
+* **Action:** Updated package repositories and installed dependencies: `apt update && apt install curl -y`.
+* **Action:** Attempted to initialize the service using `tailscale up`.
+* **Result:** **FAILURE.** Received error: `failed to connect to local tailscaled; it doesn't appear to be running`.
+* **Theory:** Suspected the background daemon was crashing because the container lacked "Nesting" permissions and access to the host's TUN device.
 
-Cause: Unprivileged or strictly sandboxed containers are blocked from creating the virtual network adapters required for VPNs.
-
-Resolution (The "Guaranteed Fix"): Manually edit the container configuration file on the Proxmox Host Shell to allow device passthrough:
-
-Open the config file (replace ID with your container ID, e.g., 101): nano /etc/pve/lxc/ID.conf
-
-Add these lines to the bottom of the file:
-lxc.cgroup2.devices.allow: c 10:200 rwm
-lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
-
-Restart the container for changes to take effect.
-
-Key Cybersecurity Concepts Learned
-Principle of Least Privilege: Understanding why Proxmox blocks hardware access by default to prevent a "container escape".
-
-Service Management: Using systemctl to manage background processes.
-
-Encapsulation: How VPNs use the TUN/TAP driver to wrap data in encrypted packets.
+### Phase 3: Hardware Passthrough & Configuration
+* **Action:** Enabled **Nesting** in Proxmox under Container > Options > Features.
+* **Action:** Performed a manual "Device Passthrough" by editing the host configuration file (`/etc/pve/lxc/[ID].conf`) to grant the container access to required kernel drivers.
+* **Configuration Added:**
+  ```text
+  lxc.cgroup2.devices.allow: c 10:200 rwm
+  lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
