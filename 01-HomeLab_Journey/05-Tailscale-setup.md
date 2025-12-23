@@ -4,7 +4,7 @@
 
 ## ⚙️ Configuration Details
 - **Tailnet IP Address:** `100.x.x.xxx` (Private Mesh Network)
-- **Auth Method: OAuth via OIDC (secure single sign-on)
+- **Auth Method:** OAuth via OIDC (secure single sign-on)
 
 ## 📝 Installation Steps
 1. Container Provisioning: Created a new Ubuntu 22.04 LXC in Proxmox.
