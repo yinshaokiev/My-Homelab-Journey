@@ -45,7 +45,8 @@
 * **Resolution: After implementing device passtrhough for /'dev/net/tun the services successfully initialized and generated an OAuth autehnication URL.**
 * **Final Verificaiton.  Tailscale Admin Console confirming both the Proxmox node and mobile client are acitve on private 'Tailnet'.**
 * 
-  <img width="1170" height="761" alt="image" src="https://github.com/user-attachments/assets/61356d6b-b25f-43c7-b9d9-4a359bbaf2aa" />
+<img width="1261" height="803" alt="image" src="https://github.com/user-attachments/assets/84a27192-ff91-4149-8305-987a588b5df7" />
+
 
 
 [Back to Home](../01-HomeLab_Journey/01-README.md)
