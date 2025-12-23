@@ -31,4 +31,11 @@
   lxc.cgroup2.devices.allow: c 10:200 rwm
   lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
 
+
+* **Resolution: After implementing device passtrhough for /'dev/net/tun the services successfully initialized and generated an OAuth autehnication URL.**
+* **Final Verificaiton.  Tailscale Admin Console confirming both the Proxmox node and mobile client are acitve on private 'Tailnet'.**
+* 
+  <img width="1170" height="761" alt="image" src="https://github.com/user-attachments/assets/61356d6b-b25f-43c7-b9d9-4a359bbaf2aa" />
+
+
 [Back to Home](../01-HomeLab_Journey/01-README.md)
