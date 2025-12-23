@@ -28,7 +28,7 @@
 | **Root Disk** | 8 GiB |
 | **Unprivileged** | No (Privileged container required for kernel device passthrough) |
 
-<img width="1168" height="786" alt="image" src="https://github.com/user-attachments/assets/5f0ad9cf-3ae5-4337-8f87-a12fe3efe215" />
+<img width="1261" height="803" alt="image" src="https://github.com/user-attachments/assets/9f817caf-75a4-4289-b908-d477d9cc8dce" />
 
 ## 🛡️ Security Impact
 - **Zero Trust:** Implemented identity-based access rather than relying on a traditional perimeter firewall.
