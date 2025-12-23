@@ -9,6 +9,7 @@
 ## 🔍 Problem Identification
 1. **Remote Access Gap:** Proxmox dashboard and local services were restricted to the local management network.
 2. **Permission Constraints:** The initial Tailscale installation failed because the Proxmox container (LXC) was restricted from creating a virtual network tunnel (`/dev/net/tun`) by default.
+3. **Service initialization error: the minimal Ubuntu template lacked necessary dependencies for the installation scrript. 
 
 ## 🛠️ Troubleshooting Steps & Methodology
 
@@ -21,6 +22,7 @@
 * **Action:** Updated package repositories and installed dependencies: `apt update && apt install curl -y`.
 * **Action:** Attempted to initialize the service using `tailscale up`.
 * **Result:** **FAILURE.** Received error: `failed to connect to local tailscaled; it doesn't appear to be running`.
+
 * **Theory:** Suspected the background daemon was crashing because the container lacked "Nesting" permissions and access to the host's TUN device.
 
 ### Phase 3: Hardware Passthrough & Configuration
