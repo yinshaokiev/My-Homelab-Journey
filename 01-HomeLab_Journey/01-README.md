@@ -30,4 +30,5 @@ This respository is my step by step learning process for setting up My first hom
 - 12/21/25 - [Networking Incident Response & Troubleshooting - Xfinity Gateway Recovery & Proxmox Restoration](../99-Troubleshooting/12-21-25_networking.md)
 - 12/21/25 - Learned about tailscale because I wanted to know if I can access my homelab outside of my homenetwork. 
 - 12/22/25  [x] **[Tailscale-VPN](./05-Tailscale-setup.md)** - VPN remote accesss.
-- -12/23/25 - [Netwokring Incident Response & Troubleshooting - Tailscale VPN Implementation & Proxmox LXC Hardening](../99-Troubleshooting/12-23-25_tailscale-lxc-fix.md)
+- 12/23/25 - [Netwokring Incident Response & Troubleshooting - Tailscale VPN Implementation & Proxmox LXC Hardening](../99-Troubleshooting/12-23-25_tailscale-lxc-fix.md)
+- 12/23/25 - Reading up on next lab potential labs Honey pot and NAS. Not sure which one to do next.  
