@@ -16,6 +16,7 @@
 ## ⚠️ Challenges Encountered
 - **Issue:** The Tailscale daemon (tailscaled) failed to start, reporting a missing TUN device.
 - **Fix:** Enabled Nesting in Proxmox and manually edited the container configuration file (`/etc/pve/lxc/101.conf`) to allow device passthrough for `/dev/net/tun`.
+- **Troubleshooting guide** [Netwokring Incident Response & Troubleshooting - Tailscale VPN Implementation & Proxmox LXC Hardening](../99-Troubleshooting/12-23-25_tailscale-lxc-fix.md)
 
 ### 🔧 Container Technical Specifications
 | Setting | Value |
