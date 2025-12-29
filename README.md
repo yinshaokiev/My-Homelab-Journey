@@ -57,4 +57,4 @@ As part of my **Net+** and **Sec+** studies, I am actively applying the followin
 
 ### **Contact & Portfolio**
 **Yinshaokie Solomon Vang** *Aspiring Cybersecurity & Network Professional*
-https://www.linkedin.com/in/yinshaokievang/ | 
+https://www.linkedin.com/in/yinshaokievang/ 
