@@ -26,11 +26,14 @@
 * **Action:** Implemented the community-supported `pve-no-subscription` repository suite.
 * **Action:** Executed a "Reload" of the APT configuration to align the system with the new update channels.
 
-### Phase 3: Patch Execution
-* **Action:** Initiated a global package database refresh via the Web UI.
-* **Outcome:** Verified a successful sync with the message **"TASK OK"**, clearing all previous 401 and 100 error codes.
-* **Action:** Launched the `dist-upgrade` via the Shell and confirmed installation of all security patches.
+### Phase 3: Final Patch Execution & Verification
+* **Action:** Attempted `dist-upgrade` via the Node shell.
+* **Observation:** Initial command failed due to missing package manager prefix (`apt`).
+* **Resolution:** Executed `apt dist-upgrade` to finalize the system transition.
+* **Final Status:** System returned `Upgrading: 0, Installing: 0...`, confirming that all security patches have been successfully applied and the host is fully synchronized with the No-Subscription repository.
+<img width="657" height="246" alt="image" src="https://github.com/user-attachments/assets/006a4415-1a17-4cfa-8c7b-30f7ba8a8a44" />
 
+* **100% up to date.   
 ---
 
 ## 🏁 Phase 4: Resolution & Verification
@@ -38,6 +41,5 @@
 * **Final Verification:** Confirmed the terminal returned to `root@ysv:~#` with no residual errors. The Web UI now confirms: **"You get updates for Proxmox VE"**.
 * **Impact:** Established a secure, functional **Vulnerability Management** cycle for the core hypervisor infrastructure.
 
-<img width="1261" height="803" alt="Proxmox Update Resolution" src="https://github.com/user-attachments/assets/13600f68-7d8a-4952-b918-608679d4677a" />
 
 [Back to Home](../01-HomeLab_Journey/01-README.md)
