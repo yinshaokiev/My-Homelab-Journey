@@ -43,7 +43,8 @@
 ## 🏁 Phase 5: Resolution
 * **Resolution:** All Pi-hole components (Core, Web, FTL) successfully transitioned to the latest versions.
 * **Final Verification:** Dashboard confirms **"Everything is up to date!"** and DNS sinkhole services are fully operational.
+<img width="1033" height="437" alt="Screenshot 2025-12-31 170800" src="https://github.com/user-attachments/assets/34047037-34d9-48ef-8877-a378b21930fc" />
 
-<img width="1261" height="803" alt="Pihole Update Resolution" src="https://github.com/user-attachments/assets/7709b068-d3c4-42b7-ae23-0975605d520e" />
+
 
 [Back to Home](../01-HomeLab_Journey/01-README.md)
