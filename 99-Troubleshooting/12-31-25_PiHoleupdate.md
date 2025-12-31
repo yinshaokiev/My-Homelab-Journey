@@ -13,6 +13,9 @@ apt upgrade -y
 3. Application Update: Successfully executed the Pi-hole core update script.
 pihole -up 
 
+
+<img width="1033" height="437" alt="Screenshot 2025-12-31 170800" src="https://github.com/user-attachments/assets/010ae576-6e46-4370-a353-c82dd8cad60d" />
+
 Challenges & Resolutions
 During this update, I encountered and resolved several common Linux administration hurdles:
 
