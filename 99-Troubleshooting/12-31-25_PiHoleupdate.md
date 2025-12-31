@@ -1,6 +1,6 @@
 # 🛠️ Network Incident Report: Pi-hole Patch Management & Repository Reconfiguration
 
-**Date:** December 31, 2025
+**Date:**December 31, 2025
 **Technician:** YSV
 **Objective:** Perform critical system and application updates for the Pi-hole LXC container while resolving Proxmox repository authentication errors.
 
