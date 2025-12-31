@@ -33,7 +33,7 @@
 * **Final Status:** System returned `Upgrading: 0, Installing: 0...`, confirming that all security patches have been successfully applied and the host is fully synchronized with the No-Subscription repository.
 <img width="657" height="246" alt="image" src="https://github.com/user-attachments/assets/006a4415-1a17-4cfa-8c7b-30f7ba8a8a44" />
 
-* **100% up to date.   
+* **100% up to date.**   
 ---
 
 ## 🏁 Phase 4: Resolution & Verification
