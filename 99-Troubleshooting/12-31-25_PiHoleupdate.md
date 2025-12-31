@@ -1,43 +1,46 @@
-🔧 Maintenance & Troubleshooting: Pi-hole Update Log
-As part of regular lab maintenance, I performed a full system and application update for the Pi-hole LXC container. This process served as a practical exercise in Patch Management and Linux Terminal troubleshooting.
+# 🛠️ Network Incident Report: Pi-hole Patch Management & Repository Reconfiguration
 
-Update Procedure
-To ensure a stable update, I followed a professional "OS-First" sequence:
+**Date:** December 31, 2025
+**Technician:** YSV
+**Objective:** Perform critical system and application updates for the Pi-hole LXC container while resolving Proxmox repository authentication errors.
 
-1. System Database Update: Refreshed the local package index.
-apt update
+---
 
-2. OS Patching: Upgraded all underlying Linux system packages to ensure compatibility.
-apt upgrade -y
+## 🔍 Problem Identification
+1. **Application Stagnation:** The Pi-hole dashboard reported outdated Core, Web Interface, and FTL components, requiring manual intervention.
+<img width="990" height="560" alt="Screenshot 2025-12-31 170656" src="https://github.com/user-attachments/assets/f5b39f2f-a153-4562-b80c-ac33337eb018" />
 
-3. Application Update: Successfully executed the Pi-hole core update script.
-pihole -up 
+2. **Command Recognition Error:** The system failed to recognize the `pihole` command globally, leading to `bash: command not found` errors.
+3. **Repository Authentication Gap:** Proxmox host updates were failing with **Exit Code 100** due to unauthorized attempts to reach the Enterprise subscription servers.
+
+---
+
+## 🛠️ Troubleshooting Steps & Methodology
+
+### ##Phase 1: Environment Preparation
+* **Action:** Accessed the Proxmox Node (ysv) via Shell and identified the Pi-hole container ID.
+* **Action:** Remotely entered the container environment using the Proxmox container toolkit.
+* **Outcome:** Successfully established a terminal session within the container; verified current network connectivity via `ping`.
+
+### ##Phase 2: System-Level Troubleshooting
+* **Action:** Attempted a combined update command: `apt update && apt update pihole -up`.
+* **Result:** **FAILURE.** Received "Command line option 'p' not understood."
+* **Theory:** Suspected a syntax conflict between the system package manager (`apt`) and the application-specific update script (`pihole -up`).
+* **Correction:** Segmented the update process into two distinct administrative phases: System Patching and Application Updating.
+
+### ### Phase 3: Binary Verification & Path Configuration
+* **Action:** Attempted `pihole -up`.
+* **Result:** **FAILURE.** Received `bash: pihole: command not found`.
+* **Action:** Performed a manual directory search to locate the binary.
+* **Resolution:** Identified the absolute path at `/usr/local/bin/pihole`. Executed the update using the full path to bypass environment variable limitations.
+
+---
+
+## 🏁 Phase 5: Resolution
+* **Resolution:** All Pi-hole components (Core, Web, FTL) successfully transitioned to the latest versions.
+* **Final Verification:** Dashboard confirms "Everything is up to date!" and DNS sinkhole services are fully operational.
+<img width="1033" height="437" alt="Screenshot 2025-12-31 170800" src="https://github.com/user-attachments/assets/9fee6586-882c-4c38-805e-4bf280ea36eb" />
 
 
-<img width="1033" height="437" alt="Screenshot 2025-12-31 170800" src="https://github.com/user-attachments/assets/010ae576-6e46-4370-a353-c82dd8cad60d" />
 
-Challenges & Resolutions
-During this update, I encountered and resolved several common Linux administration hurdles:
-
-Syntax & Scope Errors:
-
-Issue: Initially attempted to update the Pi-hole application via the apt package manager (e.g., apt update pihole -up).
-
-Resolution: Identified the distinction between System Updates (apt) and Application Updates (pihole -up). Adjusted workflow to treat them as independent steps.
-
-Command PATH Issues:
-
-Issue: Received a bash: pihole: command not found error despite the service running correctly.
-
-Resolution: Diagnosed the issue as a directory mapping error. Resolved by identifying the absolute path (/usr/local/bin/pihole) to verify the binary's existence and health.
-
-Proxmox Repository (Exit Code 100):
-
-Issue: Encountered a task failure in the Proxmox UI when refreshing the package database.
-
-Resolution: Identified that the server was attempting to reach the "Enterprise" repository without a subscription. Successfully reconfigured the host to the No-Subscription repository, allowing for verified security updates.
-
-Outcome
-Current Status: All Pi-hole components (Core, Web Interface, and FTL) are fully patched and operational.
-
-Skills Applied: Linux CLI, Patch Management, Troubleshooting, and Repository Configuration.
+[Back to Home](../01-HomeLab_Journey/01-README.md)
