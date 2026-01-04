@@ -36,4 +36,7 @@ Documentation for the deployment and hardening of a virtualized OpenMediaVault (
 | Movies | SMB/CIFS | Raya | Read/Write |
 | TVShows | SMB/CIFS | Raya | Read/Write |
 
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
+
