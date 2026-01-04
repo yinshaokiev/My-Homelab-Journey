@@ -28,4 +28,4 @@ Follow these steps to force the iPhone to download the updated directory list fr
 ---
 ## 🔗 Navigation
 * [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
-* [🏠 Back to Main Menu](../README.md)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
