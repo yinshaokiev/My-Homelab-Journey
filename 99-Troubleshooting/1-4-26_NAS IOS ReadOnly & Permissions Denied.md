@@ -32,3 +32,7 @@ If the folder was created on a different system or drive, permissions may be inc
 ## 🧠 Security+ Concept: Authorization vs. Interoperability
 * **Authorization:** Validating that the authenticated user has the "Write" bit set in the filesystem.
 * **Interoperability:** Ensuring the **SMB Protocol** translates those Linux permissions into a format the **iOS Kernel** understands.
+---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
