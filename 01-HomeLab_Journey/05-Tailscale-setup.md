@@ -34,4 +34,7 @@
 - **Zero Trust:** Implemented identity-based access rather than relying on a traditional perimeter firewall.
 - **Attack Surface Reduction:** Successfully established remote management without exposing Port 8006 to the public internet.
 
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
+
