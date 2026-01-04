@@ -28,4 +28,7 @@
 
 <img width="513" height="286" alt="image" src="https://github.com/user-attachments/assets/191f0c2d-bc4c-43fb-abab-7811e299b75b" />
 
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
+
