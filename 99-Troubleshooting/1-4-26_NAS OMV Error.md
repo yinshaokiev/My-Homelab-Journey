@@ -8,3 +8,7 @@
 2. Clear cache: `rm -rf /var/cache/salt/minion/files/base/*`.
 3. Sync grains: `omv-salt stage run prepare`.
 4. Apply Samba fix: `omv-salt deploy run samba`.
+---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
