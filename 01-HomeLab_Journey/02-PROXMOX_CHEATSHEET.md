@@ -35,4 +35,6 @@
 * `12-21-25_networking.md` : Opens the files sitting in that directory. 
 
 ---
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
+
