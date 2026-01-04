@@ -25,4 +25,4 @@ Follow these steps to force the iPhone to download the updated directory list fr
 * **Why caching exists:** It reduces network traffic and saves battery by not re-downloading the folder list every time you open the app.
 * **The Security Trade-off:** Caching can lead to **Stale Data**. If you delete a folder or change permissions, an iPhone might still show the old folder name for a few minutes, even if access is technically denied.
 
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+[Back to Home](./99-Troubleshooting.md)
