@@ -27,5 +27,5 @@ Follow these steps to force the iPhone to download the updated directory list fr
 
 ---
 ## 🔗 Navigation
-* [⬅️ Back to Troubleshooting Folder](./troubleshooting/)
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
 * [🏠 Back to Main Menu](../README.md)
