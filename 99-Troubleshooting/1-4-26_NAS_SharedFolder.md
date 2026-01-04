@@ -30,5 +30,5 @@ Follow these steps to provision new storage areas on the NAS while maintaining *
 * **Authentication:** Handled by Tailscale and the SMB login (Who are you?).
 * **Authorization:** Handled by OMV Privileges (What are you allowed to touch?).
 * By separating these, even if a user is *authenticated* to the server, they are only *authorized* to see folders specifically assigned to them.
-* 
+  
 [Back to Home](../01-HomeLab_Journey/01-README.md)
