@@ -30,4 +30,6 @@
 - **The Fix:** Found 
 
 
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
