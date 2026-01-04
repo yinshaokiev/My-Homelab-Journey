@@ -46,3 +46,5 @@ Windows may be attempting to log in with cached, incorrect credentials.
 2. Highlight the folder and click **Privileges**.
 3. Ensure user `Raya` has **Read/Write** checked.
 4. **Important:** Always click the **Yellow Bar Checkmark** to apply changes.
+
+[Back to Home](../01-HomeLab_Journey/01-README.md)
