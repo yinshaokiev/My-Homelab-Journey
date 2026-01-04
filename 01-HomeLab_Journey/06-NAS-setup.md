@@ -36,6 +36,8 @@ Documentation for the deployment and hardening of a virtualized OpenMediaVault (
 | Movies | SMB/CIFS | Raya | Read/Write |
 | TVShows | SMB/CIFS | Raya | Read/Write |
 
+* Run this in the NAS console to move Taildrop files to the SSD
+tailscale file get /srv/dev-disk-by-uuid-YOUR-UUID-HERE/Movies/
 ---
 ## 🔗 Navigation
 * [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
