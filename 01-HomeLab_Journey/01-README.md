@@ -25,7 +25,6 @@ This respository is my step by step learning process for setting up My first hom
 ---
 ## 🔗 Navigation
 * [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
-* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
 
 
 ## 📝 Latest Breakthrough
