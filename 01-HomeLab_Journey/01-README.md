@@ -16,7 +16,7 @@ This respository is my step by step learning process for setting up My first hom
 - [x] **Pi-hole** - Network-wide ad blocking.
 - [x] **Remote Access** - Tailscale for remote access
 - [ ] **Home Assistant** - (Planned when I buy a home) Smart home orchestration. Acts as a central brain that forces all different brands to work together on a single screen.
-- [ ] **NAS setup** - (planned) Network Attached Storage Lab with primary purpose data storage
+- [x] **NAS setup** - (planned) Network Attached Storage Lab with primary purpose data storage
 - [ ] **Nextcloud/NAS** - (Planned) Personal cloud storage.
 - [ ] **Media/NAS** - (Planned) Jellyfin for media services
 - [ ] **Windows VM** - Windows 11 for testing purposes
@@ -36,3 +36,5 @@ This respository is my step by step learning process for setting up My first hom
 - 12/23/25 - Reading up on next lab potential labs Honey pot and NAS. Not sure which one to do next.
 - 12/31/25 - Deployed Tailscale across distributed endpoints (Windows & iOS) to create a private 'Tailnet'. This allows for secure, identity-verified SSH and Web GUI management of the home lab without the use of traditional VPN gateways or port forwarding.
 - 12/31/25 - Deployed updates to [Proxmox](../99-Troubleshooting/12-31-25_ProxmoxUpdate.md) and [Pi-hole](../99-Troubleshooting/12-31-25_PiHoleUpdate.md)
+- 01/04/26 - Deployed [NAS](./06-NAS-setup.md) and Mapped it to personal PC
+- 01/04/26 - Troubleshooting Mapping NAS to personal PC [Nas](../99-Troubleshooting/1-4-26_NAS_Troubleshooting.md)
