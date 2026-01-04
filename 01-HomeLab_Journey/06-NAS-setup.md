@@ -10,6 +10,7 @@ Documentation for the deployment and hardening of a virtualized OpenMediaVault (
 * **RAM:** 2GB
 * **Boot Disk:** 32GB VirtIO Block
 * **Storage:** 1TB Samsung T7 SSD (USB Pass-through)
+* * USB Pass-through: Verified via Proxmox Hardware ID mapping and OMV Disk Management.
 
 ## 🛡️ Security & Hardening Configuration
 ### 1. Access Control
