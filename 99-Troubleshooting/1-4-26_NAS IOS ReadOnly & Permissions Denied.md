@@ -26,6 +26,7 @@ If the folder was created on a different system or drive, permissions may be inc
 2. Highlight the folder and click **ACL**.
 3. Grant **Read/Write/Execute** to the user and select **Recursive**.
 4. **Apply Changes**.
+* Note: If permissions are changed on the server but not reflecting on mobile, remove the server connection in the iOS Files app and reconnect to force a fresh session token.
 
 ---
 
