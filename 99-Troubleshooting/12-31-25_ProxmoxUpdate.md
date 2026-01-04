@@ -42,4 +42,8 @@
 * **Impact:** Established a secure, functional **Vulnerability Management** cycle for the core hypervisor infrastructure.
 
 
-[Back to Home](../01-HomeLab_Journey/01-README.md)
+---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
+
