@@ -16,10 +16,10 @@ This respository is my step by step learning process for setting up My first hom
 - [x] **Pi-hole** - Network-wide ad blocking.
 - [x] **Remote Access** - Tailscale for remote access
 - [ ] **Home Assistant** - (Planned when I buy a home) Smart home orchestration. Acts as a central brain that forces all different brands to work together on a single screen.
-- [x] **NAS setup** - (planned) Network Attached Storage Lab with primary purpose data storage
-- [ ] **Nextcloud/NAS** - (Planned) Personal cloud storage.
-- [ ] **Media/NAS** - (Planned) Jellyfin for media services
-- [ ] **Windows VM** - Windows 11 for testing purposes
+- [x] **NAS setup** - Network Attached Storage Lab with primary purpose data storage
+- [x] **NAS Folder** - NAS folder set up for personal docs.
+- [x] **Media/NAS** - NAS setup with Movies and TV folder.  Mapped network drives to personal PC
+- [ ] **Jellyfin** - setup Jelly fin to view media
 - [ ] **Security + Lab** - Kali??
 - [ ] **Honey Pot** - Sec + practice
 ---
