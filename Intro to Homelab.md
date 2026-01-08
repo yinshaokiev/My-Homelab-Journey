@@ -27,7 +27,7 @@ My lab is built on a **"Hardened Hardware"** model using an ASUS laptop as a ded
 | :--- | :--- | :--- | :--- |
 | **Pi-hole** | LXC Container | DNS Sinkhole | **Sec+:** Content Filtering / **N+:** DNS Protocols |
 | **Tailscale** | LXC Container | Mesh VPN | **Sec+:** Zero Trust / **N+:** VPN Topologies |
-| **Ubuntu Host** | VM | Docker Engine | **Sec+:** Virtualization / **N+:** Network Isolation |
+
 
 ---
 
