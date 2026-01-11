@@ -53,3 +53,8 @@
 * **Network Reconnaissance:** Nmap scanning (Ping sweeps, SYN scans).
 * **Analysis:** Interpreting TCP/IP handshakes, TTL values, and banner data.
 * **Security Assessment:** Identifying open attack surfaces on local servers.
+
+---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)  
