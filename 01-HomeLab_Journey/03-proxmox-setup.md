@@ -1,34 +1,43 @@
-# Proxmox Installation Notes
-**Date:** 12/20/25
+# 🐲 Transforming "The Dragon" into a Proxmox Hypervisor
 
-### Post-Install Steps:
-- [x] Installed Proxmox VE 8.x on Asus GL502.
-- [x] Install Pi Hole 
-- [ ] Install Media Hub like Jellyfin
-- [ ] Install Windows 11 VM for testing 
+This guide documents the conversion of an **Asus GL502 Gaming Laptop** into a dedicated **Type-1 Hypervisor** using Proxmox VE. 
 
-## 🛠️ Troubleshooting Log
+## 🛠️ Hardware Specifications
+- **Model:** Asus GL502 ("The Dragon")
+- **CPU:** Intel i7-7700HQ (4 Cores / 8 Threads)
+- **RAM:** 16GB DDR4
+- **Primary Storage:** 500GB SSD
+- **Network:** Realtek Gigabit Ethernet + Intel Wireless
 
-### Issue: IP Address 
-- **The problem:** while watching youtube tutorial Proxmox VE Installation Guide I noticed my IP address was the same. 
-- **The Fix:** I found that I had to direclty connect the laptop to an Ethernet connection.
-- **Reasoning:** Using Ethernet isn't just a suggestion; it’s practically a requirement for a stable Proxmox environment. Since your server is the "foundation" for all your other virtual machines, if the foundation is shaky, everything on top of it will crash.
-- Ethernet is designed to handle multiple "MAC addresses" (identities) on one port. This allows your Proxmox host, your Pi-hole, and your Honeypot to all have their own unique IDs on the network simultaneously.
-- Wi-Fi adapters are usually "one-to-one." They struggle to pass traffic for multiple virtual identities at once, which often causes the connection to drop or prevents your VMs from getting an IP address.
+## ⚙️ Installation Process
 
-### Issue: "No Subscription" Error
-- **The Problem:** Every time I log in, Proxmox shows a warning that I don't have a paid license.
-- **The Fix:** Found a script to disable the nag. 
-- **Command used:** `curl -fssL https://proxmox-scripts.com/no-nag | bash`
-- I was not able to disable the nag 12/20/25.  I will have to do some more research as to why its not working. 
+### 1. BIOS Preparation (The "Handshake")
+To allow Proxmox to control the hardware directly, the following BIOS settings were applied:
+- **VT-x / Virtualization Technology:** Enabled (Required for running 64-bit VMs).
+- **Secure Boot:** Disabled (Allows the Proxmox kernel to load).
+- **SATA Mode:** AHCI (Standard for SSD performance).
 
-### Issue: Laptop Goes to Sleep When Lid Closed
-- **The Problem:** As soon as I closed the laptop, the server went offline.
-- **The Fix:** Had to edit the `logind.conf` file in Linux.
-- **File Path:** `/etc/systemd/logind.conf`
-- **Change:** Set `HandleLidSwitch=ignore`.
-- **The Fix:** Found 
+### 2. Flash & Boot
+- **Tool:** Used **Rufus** (or Etcher) to flash the Proxmox ISO to a USB drive.
+- **Boot Key:** Tapped `Esc` or `F2` to enter the boot menu and selected the USB drive.
 
+### 3. Installation Settings
+| Setting | Selection | Reason |
+| :--- | :--- | :--- |
+| **Target Disk** | 500GB SSD | Primary system and VM storage. |
+| **Hostname** | `ysv` | The unique name for this node in the network. |
+| **IP Address** | Static IP | Ensures the server address doesn't change (Important for OMV/NAS). |
+| **Filesystem** | ext4 (or ZFS) | Standard, reliable filesystem for a single-disk setup. |
+
+## 🛡️ Post-Install Hardening
+- **Web Interface:** Accessed the dashboard via `https://[IP-Address]:8006`.
+- **Repository Setup:** Switched to the "No-Subscription" repository to receive community updates.
+- **Tailscale Integration:** Installed Tailscale on the host to enable secure remote access from work/outside the home.
+
+## 🧠 Security+ Concepts Applied
+- **Type-1 Hypervisor:** Installed Proxmox directly on the hardware (Bare Metal) for maximum efficiency and security isolation.
+- **Availability:** The laptop's built-in battery acts as a **UPS (Uninterruptible Power Supply)**, preventing data corruption during accidental power loss.
+- **Remote Access (VPN):** Utilized Tailscale to implement a **Zero Trust** connection instead of dangerous Port Forwarding.
 
 ---
 ## 🔗 Navigation
