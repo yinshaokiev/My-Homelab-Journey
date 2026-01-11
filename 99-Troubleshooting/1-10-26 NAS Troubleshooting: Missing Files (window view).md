@@ -13,12 +13,10 @@ OpenMediaVault mounts data drives under `/srv/` rather than `/mnt/`. Use `lsblk`
 lsblk -f
 Storage Drive: sdb1
 ```
-Mountpoint: /srv/dev-disk-by-uuid-78d9e59b-55d8-4fba-9d4f-6c61285ed1c4
+*Mountpoint: /srv/dev-disk-by-uuid-78d9e59b-55d8-4fba-9d4f-6c61285ed1c4
 
 ### 2. Create an Administrative Shortcut (Symlink)
 To avoid typing long UUID paths, create a symbolic link in the home directory:
-```
-
 ```bash
 
 ln -s /srv/dev-disk-by-uuid-78d9e59b-55d8-4fba-9d4f-6c61285ed1c4/YSV/ ~/YSV_Shortcut
@@ -44,3 +42,13 @@ Use a recursive list command to confirm files are physically present in the user
 
 ls -R /var/lib/tailscale/files
 ```
+
+# 🧠 Security+ Tip: Caching vs. Security
+* Why caching exists: It reduces network traffic and saves battery by not re-downloading the folder list every time you open an app.
+
+* The Security Trade-off: Caching can lead to Stale Data. If you change permissions, a client might still show the old folder name or "Empty" status for a few minutes.
+
+---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
