@@ -51,6 +51,13 @@ sudo systemctl enable qemu-guest-agent --now
 sudo apt full-upgrade -y
 ```
 - **Configuration Management:** Created a snapshot titled `Fresh-Install-Updated` to establish a known-good baseline. This allows for rapid rollback if the system breaks during future testing.
+
+## 🔮 Future Lab Roadmap
+* **Traffic Analysis:** Deep packet inspection using **Wireshark** to capture cleartext credentials (HTTP) vs. encrypted traffic (HTTPS).
+* **Credential Testing:** Utilizing **Hydra** to perform dictionary attacks against local services (SSH/FTP) to test password strength policies.
+* **Vulnerability Scanning:** deploying **OpenVAS** or **Nessus** to perform automated vulnerability assessments against the Metasploitable target.
+* **Web Application Security:** Using **Burp Suite** to intercept and modify web traffic for testing OWASP Top 10 vulnerabilities.
+  
 ---
 ## 🔗 Navigation
 * [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
