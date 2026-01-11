@@ -51,4 +51,6 @@ sudo systemctl enable qemu-guest-agent --now
 sudo apt full-upgrade -y
 ```
 - **Configuration Management:** Created a snapshot titled `Fresh-Install-Updated` to establish a known-good baseline. This allows for rapid rollback if the system breaks during future testing.
-
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
