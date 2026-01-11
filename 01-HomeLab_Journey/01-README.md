@@ -20,7 +20,7 @@ This respository is my step by step learning process for setting up My first hom
 - [x] **NAS Folder** - NAS folder set up for personal docs.
 - [x] **Media/NAS** - NAS setup with Movies and TV folder.  Mapped network drives to personal PC
 - [ ] **Jellyfin** - setup Jelly fin to view media
-- [ ] **Security + Lab** - Kali??
+- [x] **Security + Lab** - Kali??
 - [ ] **Honey Pot** - Sec + practice
 ---
 ## 🔗 Navigation
