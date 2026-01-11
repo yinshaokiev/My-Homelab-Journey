@@ -43,3 +43,5 @@ This respository is my step by step learning process for setting up My first hom
 - 01/04/26 - Troubleshooting Mapping NAS to personal PC [NAS Troubleshooting](../99-Troubleshooting/1-4-26_NAS_Troubleshooting.md)
 - 01/10/26 - researched markdown syntax
 - 01/10/26 - Siemlessly transfer files from phone directly to my NAS into a folder [NAS Troubleshooting](../99-Troubleshooting/1-10-26_NAS-Troubleshooting.md)
+- 01/11/26 - Completed [Kali lab set up](./07-KaliLab-setup.md)
+- 01/11/26 - Ran a Kali Lab [Network Reconnaissance](../99-Troubleshooting/1-11-26_Kali-Lab-Nmap.md)
