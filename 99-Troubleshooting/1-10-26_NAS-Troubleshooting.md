@@ -1,6 +1,7 @@
 # NAS Troubleshooting: Recovering and Automating Missing Files
 
-This guide documents the process of locating "missing" files on the OpenMediaVault (OMV) NAS and resolving permission issues for network users.
+* This guide documents the process of locating "missing" files on the OpenMediaVault (OMV) NAS and resolving permission issues for network users.
+* As well as siemless being able to transfer files direcltly from my phone to a specific folder in my NAS.
 
 ## 📋 Problem Description
 Files sent to the NAS via Tailscale (Taildrop) were not appearing in the expected network share (`YSV`) and were returning "Access Denied" errors on Windows clients.
