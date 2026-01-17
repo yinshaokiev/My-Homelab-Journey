@@ -1,4 +1,9 @@
 ## 🔧 Troubleshooting Log (The "Real World" Stuff)
+**Date:** January 16, 2026  
+**Auditor:** Yinshaokie Solomon Vang  
+**Tools Used:** Proxmox VE, Splunk Enterprise (Web UI), SSH(Terminal Component: SIEM Server (10.0.0.xx)
+
+---
 
 ### 🛑 Issue 1: "Connection Refused" on Web UI
 * **Symptom:** Web interface (`http://10.0.0.34:8000`) refused to load after installation.
@@ -33,6 +38,7 @@ To confirm the SIEM was fully operational, we performed a "smoke test" by search
 * **Command:** `index=*`
 * **Time Range:** `All Time`
 * **Result:** The search returned **15,823 events** immediately. This high volume confirms that the "Monitor" input is actively reading the historical contents of `/var/log` rather than just waiting for new events.
+<img width="3809" height="1449" alt="Screenshot 2026-01-16 203137" src="https://github.com/user-attachments/assets/2761a4d1-ade5-4567-b11a-6e0eea8b00df" />
 
 **2. Evidence of Live Logging**
 We successfully located a specific administrative action in the logs, proving the system is recording user behavior in real-time.
