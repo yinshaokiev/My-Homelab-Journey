@@ -64,3 +64,8 @@ To perform a "Network Hygiene Check" on the local home network (`10.0.0.0/24`) t
 The local network perimeter is secure.
 1.  **Workstation:** Highly secure (Filtered).
 2.  **Server/NAS:** Functioning normally with expected services.
+
+---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)  
