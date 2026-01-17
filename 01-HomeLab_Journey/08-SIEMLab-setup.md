@@ -33,6 +33,7 @@
 * **Boot Config:** Enabled boot-start so the service survives reboots.
 * **Privileges:** Configured service to run as root (`--run-as-root`) to ensure full access to system logs.
 * **Data Ingestion:** Successfully configured the first input to monitor local `/var/log` files.
+<img width="3827" height="1757" alt="Screenshot 2026-01-16 200050" src="https://github.com/user-attachments/assets/3438a6fa-6faf-4b27-89ae-126e5cd598db" />
 
 ---
 
