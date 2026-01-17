@@ -25,10 +25,30 @@
   3. Changed value from `5000` to `500`.
   4. Saved and refreshed the browser.
 
-### ✅ Verification
-* **Command:** Validated data flow by running the following search in the Splunk Web UI:
-  ```splunk
-  index=*
-  ``
+### ✅ Verification & Analysis
 
-  
+To confirm the SIEM was fully operational, we performed a "smoke test" by searching for internal system logs.
+
+**1. The "Show Everything" Search**
+* **Command:** `index=*`
+* **Time Range:** `All Time`
+* **Result:** The search returned **15,823 events** immediately. This high volume confirms that the "Monitor" input is actively reading the historical contents of `/var/log` rather than just waiting for new events.
+
+**2. Evidence of Live Logging**
+We successfully located a specific administrative action in the logs, proving the system is recording user behavior in real-time.
+* **Log Entry Found:**
+    ```text
+    COMMAND=/opt/splunk/bin/splunk start --run-as-root
+    ```
+* **Why this matters:** This specific log entry matches the exact command we executed to fix the "connection refused" error. Finding this entry closes the loop, proving that **Action (Terminal) → Log (Linux) → Ingestion (Splunk)** is functioning correctly.
+
+**3. Field Parsing Confirmation**
+Splunk successfully parsed the raw text into searchable fields (verified in the left sidebar):
+* **`host = siem-server`**: Correctly identified the machine name.
+* **`source = /var/log/auth.log`**: Correctly identified the file origin (Authentication Logs).
+* **`sourcetype = auth`**: Correctly applied the "Linux Authentication" data model, allowing us to filter by user (e.g., `root` vs `admin_ysv`).
+
+  ---
+## 🔗 Navigation
+* [⬅️ Back to Troubleshooting](../99-Troubleshooting/)
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)  
