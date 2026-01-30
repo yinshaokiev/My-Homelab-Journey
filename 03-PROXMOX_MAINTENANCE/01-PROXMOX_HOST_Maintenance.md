@@ -60,3 +60,18 @@ Once the server comes back online:
 * Look at the top banner next to the Proxmox logo.
   * Example: `Proxmox VE 8.1.x`
 * Ensure your VMs (Kali/Splunk) start up automatically (if "Start at boot" is enabled) or start them manually.
+
+---
+## ⚙️ Phase 1: Repository Configuration (The "Free" Setup)
+
+**Objective:** Ensure the server pulls updates from the free "No-Subscription" repository.
+
+1. **Access the Repo Manager:**
+   * Go to **Datacenter** -> **Node (ysv)** -> **Updates** -> **Repositories**.
+2. **Review Status:**
+   * ❌ **Enterprise:** Should be **Disabled** (prevents "Invalid Subscription" errors).
+   * ❌ **Ceph-Squid:** Should be **Disabled** (unless you are using Ceph storage).
+   * ✅ **No-Subscription:** Should be **ENABLED**.
+3. **How to Fix:**
+   * If "No-Subscription" is disabled (Yellow ! icon), select it and click **Enable**.
+   * If it is missing entirely, click **Add** -> **No-Subscription**.
