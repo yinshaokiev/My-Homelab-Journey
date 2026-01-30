@@ -97,4 +97,6 @@ sudo /opt/splunkforwarder/bin/splunk list monitor
 * Splunk VM: `sudo poweroff`
 * Proxmox: Leave running or shut down via web interface.
 
-
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
