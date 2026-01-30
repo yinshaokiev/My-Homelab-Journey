@@ -83,3 +83,7 @@ Problem: Splunk sees the `sudo` command but not the arguments.
 ## 🛑 Phase 4: Shutdown
 * Kali VM: sudo poweroff
 * Splunk VM: sudo poweroff
+
+---
+## 🔗 Navigation
+* [🏠 Back to Main Menu](../01-HomeLab_Journey/01-README.md)
