@@ -47,6 +47,7 @@ This respository is my step by step learning process for setting up My first hom
 - 01/10/26 - Siemlessly transfer files from phone directly to my NAS into a folder [NAS Troubleshooting](../99-Troubleshooting/1-10-26_NAS-Troubleshooting.md)
 - 01/11/26 - Completed [Kali lab set up](./07-KaliLab-setup.md)
 - 01/11/26 - Ran a Kali Lab [Network Reconnaissance](../99-Troubleshooting/1-11-26_Kali-Lab-nmap.md)
+- 01/11/26 - Runbook [NMAP Simulation](../02-LabRUNBOOK/1-11-26_NMAP-Simulation.md)
 - 01/16/26 - Worked on Kali lab and did a small sanitization report [Network Hygiene](../99-Troubleshooting/1-16-26_Kali-Lab-Hygiene.md)
 - 01/16/26 - Finished BlueTeam Lab - [SIEM lab with Splunk](./08-SIEMLab-setup.md)
 - 01/16/26 - SIEM Troubleshooting - [SplunkLog01](../99-Troubleshooting/1-16-26_SplunkLog_01.md)
