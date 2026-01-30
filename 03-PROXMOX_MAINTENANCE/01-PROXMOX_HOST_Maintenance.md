@@ -1,7 +1,7 @@
 # 🛠️ Proxmox Host Maintenance Runbook
 
-**Purpose:** This document outlines the standard operating procedure (SOP) for patching and updating the Proxmox Virtual Environment (VE) hypervisor.
-**Frequency:** Recommended once per month or when critical security patches are released.
+* **Purpose:** This document outlines the standard operating procedure (SOP) for patching and updating the Proxmox Virtual Environment (VE) hypervisor.
+* **Frequency:** Recommended once per month or when critical security patches are released.
 
 ---
 
