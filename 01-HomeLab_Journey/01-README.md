@@ -22,6 +22,7 @@ This respository is my step by step learning process for setting up My first hom
 - [ ] **Jellyfin** - setup Jelly fin to view media
 - [x] **Security + Lab** - Kali RedTeam
 - [x] **SIEM Lab** - Splunk set up BlueTeam
+- [x] **SOC LAB** - Building a SOC with Splunk & Kali Linux
 - [ ] **Honey Pot** - Sec + practice
 ---
 ## 🔗 Navigation
@@ -48,4 +49,6 @@ This respository is my step by step learning process for setting up My first hom
 - 01/11/26 - Ran a Kali Lab [Network Reconnaissance](../99-Troubleshooting/1-11-26_Kali-Lab-nmap.md)
 - 01/16/26 - Worked on Kali lab and did a small sanitization report [Network Hygiene](../99-Troubleshooting/1-16-26_Kali-Lab-Hygiene.md)
 - 01/16/26 - Finished BlueTeam Lab - [SIEM lab with Splunk](./08-SIEMLab-setup.md)
-- 01/16/26 - SIEM Troubleshooting - [SplunkLog01](../99-Troubleshooting/1-16-26_SplunkLog_01.md) 
+- 01/16/26 - SIEM Troubleshooting - [SplunkLog01](../99-Troubleshooting/1-16-26_SplunkLog_01.md)
+- 1/30/26 - Home Lab: [Building a SOC with Splunk & Kali Linux](./09-BuildingSOC-setup.md)
+- 1/30/26 - Runbook [SOC Lab Runbook: attack similation]  
