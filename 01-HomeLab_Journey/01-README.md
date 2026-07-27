@@ -54,4 +54,4 @@ This respository is my step by step learning process for setting up My first hom
 - 1/30/26 - Home Lab: [Building a SOC with Splunk & Kali Linux](./09-BuildingSOC-setup.md)
 - 1/30/26 - Runbook [SOC Lab Runbook: attack similation](../02-LabRUNBOOK/1-30-26_SOC-Lab-Simulation.md)
 - 7/27/26 - Maintenance [Post_Move_DNS_FIX](../03-PROXMOX_MAINTENANCE/03-PostMove_DNSFIX.md)
-- 7/27/26 - Maintenance Host and Containers [Updates](./03-PROXMOX_MAINTENACE.md)
+- 7/27/26 - Maintenance Host and Containers [Updates](../03-PROXMOX_MAINTENANCE/)
