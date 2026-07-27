@@ -53,4 +53,4 @@ This respository is my step by step learning process for setting up My first hom
 - 01/16/26 - SIEM Troubleshooting - [SplunkLog01](../99-Troubleshooting/1-16-26_SplunkLog_01.md)
 - 1/30/26 - Home Lab: [Building a SOC with Splunk & Kali Linux](./09-BuildingSOC-setup.md)
 - 1/30/26 - Runbook [SOC Lab Runbook: attack similation](../02-LabRUNBOOK/1-30-26_SOC-Lab-Simulation.md)
-- 7/7/26 - Maintenance [Post_Move DNS FIX](../03-PROXMOX_MAINTENANCE/03-PostMove_DNSFIX.md)
+- 7/7/26 - Maintenance [Post_Move_DNS_FIX](../03-PROXMOX_MAINTENANCE/03-PostMove_DNSFIX.md)
